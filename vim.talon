@@ -58,12 +58,18 @@ go way up:
 go way down:
   key(escape)
   key(shift-g)
-  
-go to <user.word>:
+
+search <user.text>:
   key(escape)
-  insert("/" + word)
+  insert("/")
+  user.insert_formatted(text, "SNAKE_CASE")
   key(enter)
 
+search drop:
+  key(escape)
+  insert(":noh")
+  key(enter)
+  
 next:
   key(escape)
   key(n)
@@ -72,11 +78,6 @@ last:
   key(escape)
   key(shift-n)
 
-search drop:
-  key(escape)
-  insert(":noh")
-  key(enter)
-  
 indent <user.number_string> (line | lines):
   insert("v{number_string}j")
   key(shift->)
@@ -91,3 +92,9 @@ comment (line | lines):
 comment <user.number_string> (line | lines):
   insert("v{number_string}j")
   insert(",ci")
+
+go <user.number_string> down:
+  insert("{number_string}j")
+
+go <user.number_string> up:
+  insert("{number_string}k")
