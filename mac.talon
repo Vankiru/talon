@@ -15,6 +15,3 @@ space all:
  
 space drop:
   key(ctrl-down)
-  
-out:
-  key(o)

@@ -58,6 +58,14 @@ go way up:
 go way down:
   key(escape)
   key(shift-g)
+  
+scroll down:
+  key(escape)
+  key(ctrl-d)
+
+scroll up:
+  key(escape)
+  key(ctrl-u)
 
 search <user.text>:
   key(escape)
@@ -78,19 +86,36 @@ last:
   key(escape)
   key(shift-n)
 
+take <user.number_string> (line | lines):
+  user.vim_select_lines(number_string)
+
+take line:
+  key(escape)
+  insert("v")
+
 indent <user.number_string> (line | lines):
-  insert("v{number_string}j")
+  user.vim_select_lines(number_string)
   key(shift->)
 
+indent line:
+  key(escape)
+  insert("v")
+  key(shift-<)
+
 dedent <user.number_string> (line | lines):
-  insert("v{number_string}j")
+  user.vim_select_lines(number_string)
+  key(shift-<)
+
+dedent line:
+  key(escape)
+  insert("v")
   key(shift-<)
 
 comment (line | lines):
   insert("v,ci")
 
 comment <user.number_string> (line | lines):
-  insert("v{number_string}j")
+  user.vim_select_lines(number_string)
   insert(",ci")
 
 go <user.number_string> down:

@@ -6,3 +6,6 @@ slot next:
 
 slot last:
   key(super-left)
+  
+grip <user.text>:
+  insert("fgrep -R \"{text}\" ")
