@@ -29,6 +29,13 @@ mark title <user.text>:
   user.insert_formatted(text, "CAPITALIZE_ALL_WORDS")
   key(escape)
 
+mark subtitle <user.text>:
+  key(escape)
+  key(o)
+  insert("### ")
+  user.insert_formatted(text, "CAPITALIZE_ALL_WORDS")
+  key(escape)
+
 mermaid table <user.text>:
   title = user.formatted_text(text, "CAPITALIZE_ALL_WORDS")
   table = user.formatted_text(text, "SNAKE_CASE")

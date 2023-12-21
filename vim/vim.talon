@@ -43,11 +43,24 @@ split close:
   insert(": q")
   key(enter)
 
+(tree | three) open:
+  key(escape)
+  insert(":NERDTree")
+  key(enter)
+
 undo:
   key(escape)
   key(u)
 
 redo:
+  key(escape)
+  key(ctrl-r)
+
+vim undo:
+  key(escape)
+  key(u)
+
+vim redo:
   key(escape)
   key(ctrl-r)
 
@@ -123,3 +136,18 @@ go <user.number_string> down:
 
 go <user.number_string> up:
   insert("{number_string}k")
+
+focus middle:
+  key(escape)
+  insert("zz")
+  key(enter)
+
+focus up:
+  key(escape)
+  insert("zt")
+  key(enter)
+
+focus down:
+  key(escape)
+  insert("zb")
+  key(enter)
