@@ -1,6 +1,9 @@
 title: /vim/
 -
 
+drop:
+  key(escape)
+
 file save:
   key(escape)
   insert(": w")

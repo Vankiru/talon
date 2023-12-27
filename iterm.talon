@@ -10,18 +10,30 @@ slot last:
 grip <user.text>:
   insert("fgrep -R \"{text}\" ")
 
+vim:
+  insert("vim")
+  key(enter)
+
 (catty | katy) home:
   insert("cd")
   key(enter)
 
 (catty | katy) (talent | talon):
-  insert("cd /Users/vankiru/.talon/user")
+  insert("cd ~/.talon/user")
   key(enter)
 
 (catty | katy) my (talent | talon):
-  insert("cd /Users/vankiru/.talon/user/vankiru")
+  insert("cd ~/.talon/user/vankiru")
   key(enter)
 
 (catty | katy) one:
-  insert("cd /Users/vankiru/projects/crestar/lendingone")
+  insert("cd ~/projects/crestar/lendingone")
+  key(enter)
+
+(catty | katy) (project | projects):
+  insert("cd ~/projects")
+  key(enter)
+
+(catty | katy) gems:
+  insert("cd ~/projects/gems")
   key(enter)
