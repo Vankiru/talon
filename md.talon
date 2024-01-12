@@ -27,6 +27,7 @@ mark title <user.text>:
   key(o)
   insert("## ")
   user.insert_formatted(text, "CAPITALIZE_ALL_WORDS")
+  key(enter)
   key(escape)
 
 mark subtitle <user.text>:
@@ -34,7 +35,13 @@ mark subtitle <user.text>:
   key(o)
   insert("### ")
   user.insert_formatted(text, "CAPITALIZE_ALL_WORDS")
+  key(enter)
   key(escape)
+
+mark dedent <user.number_string> (line | lines):
+  insert("^hh")
+  key(ctrl-v)
+  insert("{number_string}jlx")
 
 mermaid table <user.text>:
   title = user.formatted_text(text, "CAPITALIZE_ALL_WORDS")
@@ -47,7 +54,7 @@ mermaid table <user.text>:
   ---
   erDiagram
     {table} {{
-      integer id
+      id integer
     }}
   ```
   """
@@ -56,3 +63,14 @@ mermaid table <user.text>:
   insert(command)
   key(escape)
 
+mermaid (graph | graf):
+  command = """
+  ```
+  graph TB
+  a --> b
+  ```
+  """
+
+  key(o)
+  insert(command)
+  key(escape)

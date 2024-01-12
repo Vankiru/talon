@@ -125,7 +125,7 @@ dedent <user.number_string> (line | lines):
 dedent line:
   key(escape)
   insert("v")
-  key(shift-<)
+  key(shift->)
 
 comment (line | lines):
   insert("v,ci")
@@ -143,14 +143,15 @@ go <user.number_string> up:
 focus middle:
   key(escape)
   insert("zz")
-  key(enter)
 
 focus up:
   key(escape)
   insert("zt")
-  key(enter)
 
 focus down:
   key(escape)
   insert("zb")
-  key(enter)
+
+capital:
+  key(escape)
+  insert("vgU")
