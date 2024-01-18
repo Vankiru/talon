@@ -43,7 +43,20 @@ split new:
 
 split close:
   key(escape)
-  insert(": q")
+  insert(":q")
+  key(enter)
+
+split next close:
+  key(escape)
+  key(super-w)
+  insert(":q")
+  key(enter)
+
+split last close:
+  key(escape)
+  key(ctrl-w)
+  key(shift-w)
+  insert(":q")
   key(enter)
 
 (tree | three) open:
@@ -94,11 +107,11 @@ search drop:
   insert(":noh")
   key(enter)
   
-next:
+search next:
   key(escape)
   key(n)
 
-last:
+search last:
   key(escape)
   key(shift-n)
 
@@ -140,15 +153,15 @@ go <user.number_string> down:
 go <user.number_string> up:
   insert("{number_string}k")
 
-focus middle:
+page middle:
   key(escape)
   insert("zz")
 
-focus up:
+page up:
   key(escape)
   insert("zt")
 
-focus down:
+page down:
   key(escape)
   insert("zb")
 
