@@ -2,44 +2,29 @@ title: /vim/
 -
 
 mark code <user.word>:
-  key(escape)
-  key(o)
-  insert("```" + word)
-  key(enter)
-  insert("```")
-  key(escape)
-  key(k)
-  key(p)
+  user.vim_insert_mode("```{word}\n```", "o")
+  user.vim_normal_mode("kp")
   
 mark (three | tree):
-  key(escape)
-  key(o)
-  insert("```sh")
-  key(enter)
-  key(enter)
-  insert("```")
+  user.vim_insert_mode("```sh\n\n```", "o")
   key(up)
   key(super-v)
   key(escape)
   
 mark title <user.text>:
-  key(escape)
-  key(o)
-  insert("## ")
-  user.insert_formatted(text, "CAPITALIZE_ALL_WORDS")
-  key(enter)
-  key(escape)
+  title = user.formatted_text(text, "CAPITALIZE_ALL_WORDS")
+  command = "## {title}\n"
+
+  user.vim_insert_mode(command, "o")
 
 mark subtitle <user.text>:
-  key(escape)
-  key(o)
-  insert("### ")
-  user.insert_formatted(text, "CAPITALIZE_ALL_WORDS")
-  key(enter)
-  key(escape)
+  title = user.formatted_text(text, "CAPITALIZE_ALL_WORDS")
+  command = "### {title}\n"
+
+  user.vim_insert_mode(command, "o")
 
 mark dedent <user.number_string> (line | lines):
-  insert("^hh")
+  user.vim_normal_mode("^hh")
   key(ctrl-v)
   insert("{number_string}jlx")
 
@@ -59,9 +44,7 @@ mermaid table <user.text>:
   ```
   """
 
-  key(o)
-  insert(command)
-  key(escape)
+  user.vim_insert_mode(command, "o")
 
 mermaid (graph | graf):
   command = """
@@ -71,6 +54,4 @@ mermaid (graph | graf):
   ```
   """
 
-  key(o)
-  insert(command)
-  key(escape)
+  user.vim_insert_mode(command, "o")

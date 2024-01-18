@@ -5,27 +5,20 @@ drop:
   key(escape)
 
 file save:
-  key(escape)
-  insert(": w")
-  key(enter)
+  user.vim_command_mode("w")
 
 file close:
-  key(escape)
-  insert(":wq")
-  key(enter)
+  user.vim_command_mode("wq")
 
-file close bang:
-  key(escape)
-  insert(":q!")
-  key(enter)
+file force close:
+  user.vim_command_mode("q!")
  
 file open:
   key(escape)
   key(super-p)
 
 file toggle:
-  key(escape)
-  insert("zi")
+  user.vim_normal_mode("zi")
 
 split next:
   key(escape)
@@ -37,14 +30,10 @@ split last:
   key(shift-w)
 
 split new:
-  key(escape)
-  insert(":vsp")
-  key(enter)
+  user.vim_command_mode("vsp")
 
 split close:
-  key(escape)
-  insert(":q")
-  key(enter)
+  user.vim_command_mode("q")
 
 split next close:
   key(escape)
@@ -59,30 +48,34 @@ split last close:
   insert(":q")
   key(enter)
 
-(tree | three) open:
+split close next:
   key(escape)
-  insert(":NERDTree")
+  insert(":q")
   key(enter)
 
-undo:
+split close last:
   key(escape)
-  key(u)
+  insert(":q")
+  key(enter)
+  key(ctrl-w)
+  key(shift-w)
+
+swap words:
+  user.vim_normal_mode("dwea ")
+  user.vim_normal_mode("px")
+
+(tree | three) open:
+  user.vim_command_mode("NERDTree")
+
+undo:
+  user.vim_normal_mode("u")
 
 redo:
   key(escape)
   key(ctrl-r)
 
-vim undo:
-  key(escape)
-  key(u)
-
-vim redo:
-  key(escape)
-  key(ctrl-r)
-
 go way up:
-  key(escape)
-  insert("gg")
+  user.vim_normal_mode("gg")
 
 go way down:
   key(escape)
@@ -103,13 +96,10 @@ search <user.text>:
   key(enter)
 
 search drop:
-  key(escape)
-  insert(":noh")
-  key(enter)
+  user.vim_command_mode("noh")
   
 search next:
-  key(escape)
-  key(n)
+  user.vim_normal_mode("n")
 
 search last:
   key(escape)
@@ -127,44 +117,32 @@ indent <user.number_string> (line | lines):
   key(shift->)
 
 indent line:
-  key(escape)
-  insert("v")
-  key(shift-<)
+  user.vim_normal_mode("v")
+  key(shift->)
 
 dedent <user.number_string> (line | lines):
   user.vim_select_lines(number_string)
   key(shift-<)
 
 dedent line:
-  key(escape)
-  insert("v")
-  key(shift->)
+  user.vim_normal_mode("v")
+  key(shift-<)
 
 comment (line | lines):
-  insert("v,ci")
+  user.vim_normal_mode("v,ci")
 
 comment <user.number_string> (line | lines):
   user.vim_select_lines(number_string)
   insert(",ci")
 
-go <user.number_string> down:
-  insert("{number_string}j")
+scroll middle:
+  user.vim_normal_mode("zz")
 
-go <user.number_string> up:
-  insert("{number_string}k")
+scroll top:
+  user.vim_normal_mode("zt")
 
-page middle:
-  key(escape)
-  insert("zz")
-
-page up:
-  key(escape)
-  insert("zt")
-
-page down:
-  key(escape)
-  insert("zb")
+scroll bottom:
+  user.vim_normal_mode("zb")
 
 capital:
-  key(escape)
-  insert("vgU")
+  user.vim_normal_mode("vgU")
