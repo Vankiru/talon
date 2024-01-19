@@ -14,19 +14,16 @@ file force close:
   user.vim_command_mode("q!")
  
 file open:
-  key(escape)
-  key(super-p)
+  user.vim_normal_mode_key("super-p")
 
 file toggle:
   user.vim_normal_mode("zi")
 
 split next:
-  key(escape)
-  key(super-w)
+  user.vim_normal_mode_key("super-w")
 
 split last:
-  key(escape)
-  key(ctrl-w)
+  user.vim_normal_mode_key("ctrl-w")
   key(shift-w)
 
 split new:
@@ -36,27 +33,19 @@ split close:
   user.vim_command_mode("q")
 
 split next close:
-  key(escape)
-  key(super-w)
-  insert(":q")
-  key(enter)
+  user.vim_normal_mode_key("super-w")
+  user.vim_command_mode("q")
 
 split last close:
-  key(escape)
-  key(ctrl-w)
+  user.vim_normal_mode_key("ctrl-w")
   key(shift-w)
-  insert(":q")
-  key(enter)
+  user.vim_command_mode("q")
 
 split close next:
-  key(escape)
-  insert(":q")
-  key(enter)
+  user.vim_command_mode("q")
 
 split close last:
-  key(escape)
-  insert(":q")
-  key(enter)
+  user.vim_command_mode("q")
   key(ctrl-w)
   key(shift-w)
 
@@ -71,29 +60,23 @@ undo:
   user.vim_normal_mode("u")
 
 redo:
-  key(escape)
-  key(ctrl-r)
+  user.vim_normal_mode_key("ctrl-r")
 
 go way up:
   user.vim_normal_mode("gg")
 
 go way down:
-  key(escape)
-  key(shift-g)
+  user.vim_normal_mode_key("shift-g")
   
 scroll down:
-  key(escape)
-  key(ctrl-d)
+  user.vim_normal_mode_key("ctrl-d")
 
 scroll up:
-  key(escape)
-  key(ctrl-u)
+  user.vim_normal_mode_key("ctrl-u")
 
 search <user.text>:
-  key(escape)
-  insert("/")
-  user.insert_formatted(text, "SNAKE_CASE")
-  key(enter)
+  text = user.formatted_text(text, "SNAKE_CASE")
+  user.vim_normal_mode("/{text}")
 
 search drop:
   user.vim_command_mode("noh")
@@ -102,15 +85,13 @@ search next:
   user.vim_normal_mode("n")
 
 search last:
-  key(escape)
-  key(shift-n)
+  user.vim_normal_mode_key("shift-n")
 
 take <user.number_string> (line | lines):
   user.vim_select_lines(number_string)
 
 take line:
-  key(escape)
-  insert("v")
+  user.vim_normal_mode("v")
 
 indent <user.number_string> (line | lines):
   user.vim_select_lines(number_string)

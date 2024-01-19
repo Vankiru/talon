@@ -9,11 +9,17 @@ class Actions:
     def vim_normal_mode(command: str):
         """Execute in normal mode"""
 
+    def vim_normal_mode_key(command: str):
+        """Execute key combination in normal mode"""
+
     def vim_insert_mode(command: str, key: str = "i"):
         """Execute in insert mode"""
 
     def vim_visual_mode(command: str):
         """Execute in visual mode"""
+
+    def vim_visual_mode_vertical(command: str):
+        """Execute in vertical visual mode"""
 
     def vim_command_mode(command: str):
         """Execute in command mode"""
@@ -28,6 +34,11 @@ class VimActions:
         actions.key("escape")
         actions.insert(command)
 
+    def vim_normal_mode_key(command: str):
+        """Execute key combination in normal mode"""
+        actions.key("escape")
+        actions.key(command)
+
     def vim_insert_mode(command: str, key: str = "i"):
         """Execute in insert mode"""
         actions.key("escape")
@@ -39,6 +50,12 @@ class VimActions:
         """Execute in visual mode"""
         actions.key("escape")
         actions.insert("v{}".format(command))
+
+    def vim_visual_mode_vertical(command: str):
+        """Execute in vertical visual mode"""
+        actions.key("escape")
+        actions.key(ctrl-v)
+        actions.insert(command)
 
     def vim_command_mode(command: str):
         """Execute in command mode"""

@@ -59,6 +59,15 @@ vim normal:
   user.vim_insert_mode(command, "o")
   insert("hi")
 
+vim key <user.letters>:
+  command = "user.vim_normal_mode_key(\"{letters}\")"
+  user.vim_insert_mode(command, "o")
+
+vim key:
+  command = "user.vim_normal_mode_key(\"\")"
+  user.vim_insert_mode(command, "o")
+  insert("hi")
+
 vim insert <user.word>:
   command = "user.vim_insert_mode({word})"
   user.vim_insert_mode(command, "o")
@@ -74,6 +83,15 @@ vim visual <user.letters>:
 
 vim visual:
   command = "user.vim_visual_mode(\"\")"
+  user.vim_insert_mode(command, "o")
+  insert("hi")
+
+vim vertical <user.letters>:
+  command = "user.vim_visual_mode_vertical(\"{letters}\")"
+  user.vim_insert_mode(command, "o")
+
+vim vertical:
+  command = "user.vim_visual_mode_vertical(\"\")"
   user.vim_insert_mode(command, "o")
   insert("hi")
 
