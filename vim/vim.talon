@@ -1,4 +1,4 @@
-title: /vim/
+title: /VIM/
 -
 
 drop:
@@ -14,7 +14,7 @@ file force close:
   user.vim_command_mode("q!")
  
 file open:
-  user.vim_normal_mode_key("super-p")
+  user.vim_normal_mode_key("ctrl-p")
 
 file toggle:
   user.vim_normal_mode("zi")
@@ -77,6 +77,7 @@ scroll up:
 search <user.text>:
   text = user.formatted_text(text, "SNAKE_CASE")
   user.vim_normal_mode("/{text}")
+  key(enter)
 
 search drop:
   user.vim_command_mode("noh")
@@ -127,3 +128,15 @@ scroll bottom:
 
 capital:
   user.vim_normal_mode("vgU")
+
+<user.number_string> up:
+  user.vim_normal_mode("{user.number_string}k")
+
+<user.number_string> down:
+  user.vim_normal_mode("{user.number_string}j")
+  
+up:
+  user.vim_normal_mode("k")
+  
+down:
+  user.vim_normal_mode("j")

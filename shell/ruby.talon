@@ -7,7 +7,10 @@ bundle install:
 
 bundle spec:
   insert("bundle exec rspec ")
-  key(super-v)
+
+bundle spec clip:
+  insert("bundle exec rspec ")
+  edit.paste()
   key(enter)
 
 rails console:

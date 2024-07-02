@@ -1,4 +1,4 @@
-title: /vim/
+title: /VIM/
 -
 
 mark code <user.word>:

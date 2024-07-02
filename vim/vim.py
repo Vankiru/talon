@@ -2,7 +2,7 @@ from talon import Context, Module, actions
 
 mod = Module()
 ctx = Context()
-ctx.matches = "title: /vim/"
+ctx.matches = "title: /VIM/"
 
 @mod.action_class
 class Actions:

@@ -10,8 +10,5 @@ space last:
 space next:
   key(ctrl-right)
  
-space all:
-  key(ctrl-up)
- 
-space drop:
-  key(ctrl-down)
+key(alt-space):
+  speech.toggle()

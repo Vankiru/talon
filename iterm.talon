@@ -26,10 +26,6 @@ vim:
   insert("cd ~/.talon/user/vankiru")
   key(enter)
 
-(catty | katy) one:
-  insert("cd ~/projects/crestar/lendingone")
-  key(enter)
-
 (catty | katy) (project | projects):
   insert("cd ~/projects")
   key(enter)

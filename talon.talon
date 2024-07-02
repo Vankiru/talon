@@ -1,4 +1,4 @@
-title: /vim/
+title: /VIM/
 -
 
 # #######################
@@ -103,3 +103,73 @@ vim (comment | command):
   command = "user.vim_command_mode(\"\")"
   user.vim_insert_mode(command, "o")
   insert("hi")
+
+# #######################
+# Vim talon commands
+
+vim code normal <user.letters>:
+  command = "actions.user.vim_normal_mode(\"{letters}\")"
+  user.vim_insert_mode(command, "o")
+
+vim code normal:
+  command = "actions.user.vim_normal_mode(\"\")"
+  user.vim_insert_mode(command, "o")
+  insert("hi")
+
+vim code key <user.letters>:
+  command = "actions.user.vim_normal_mode_key(\"{letters}\")"
+  user.vim_insert_mode(command, "o")
+
+vim code key:
+  command = "actions.user.vim_normal_mode_key(\"\")"
+  user.vim_insert_mode(command, "o")
+  insert("hi")
+
+vim code insert <user.word>:
+  command = "actions.user.vim_insert_mode({word})"
+  user.vim_insert_mode(command, "o")
+
+vim code insert:
+  command = "actions.user.vim_insert_mode(\"\")"
+  user.vim_insert_mode(command, "o")
+  insert("hi")
+
+vim code visual <user.letters>:
+  command = "actions.user.vim_visual_mode(\"{letters}\")"
+  user.vim_insert_mode(command, "o")
+
+vim code visual:
+  command = "actions.user.vim_visual_mode(\"\")"
+  user.vim_insert_mode(command, "o")
+  insert("hi")
+
+vim code vertical <user.letters>:
+  command = "actions.user.vim_visual_mode_vertical(\"{letters}\")"
+  user.vim_insert_mode(command, "o")
+
+vim code vertical:
+  command = "actions.user.vim_visual_mode_vertical(\"\")"
+  user.vim_insert_mode(command, "o")
+  insert("hi")
+
+vim code (comment | command) <user.letters>:
+  command = "actions.user.vim_command_mode(\"{letters}\")"
+  user.vim_insert_mode(command, "o")
+
+vim code (comment | command):
+  command = "actions.user.vim_command_mode(\"\")"
+  user.vim_insert_mode(command, "o")
+  insert("hi")
+
+# #######################
+# User inputs
+
+talon letter:
+  user.vim_insert_mode(" <user.letter>")
+  
+talon word:
+  user.vim_insert_mode(" <user.word>")
+  
+talon text:
+  user.vim_insert_mode(" <user.text>")
+  
