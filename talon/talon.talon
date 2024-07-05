@@ -4,7 +4,7 @@ title: /\w*\.talon (.*) - VIM/
 # Talon comands for .talon files
 
 new (talon |talent) <user.text>:
-  user.vim_insert_mode("{text}:")
+  user.vim_insert_mode("{text}:", "o")
 
 (talon | talent) escape:
   user.vim_insert_mode("key(escape)", "o")
@@ -28,7 +28,7 @@ new (talon |talent) <user.text>:
 
 # Talon title contexts
 
-(talon | talent) title (talon | talent):
+(talon | talent) title:
   command = """
   title: /\w*\.talon (.*) - VIM/
   -
