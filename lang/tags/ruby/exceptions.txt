@@ -1,0 +1,64 @@
+begin
+rescue
+else
+ensure
+end
+
+begin
+rescue => Error, Error
+end
+
+begin
+rescue => Error
+rescue => Error
+end
+
+begin
+rescue => <variable>
+end
+
+begin
+rescue
+  <code>
+  retry
+end
+
+method
+rescue
+end
+
+Exception
+  NoMemoryError
+  ScriptError
+    LoadError
+    NotImplementedError
+    SyntaxError
+  SecurityError
+  SignalException
+    Interrupt
+  StandardError
+    ArgumentError
+      UncaughtThrowError
+    EncodingError
+    FiberError
+    IOError
+      EOFError
+    IndexError
+      KeyError
+      StopIteration
+        ClosedQueueError
+    LocalJumpError
+    NameError
+      NoMethodError
+    RangeError
+      FloatDomainError
+    RegexpError
+    RuntimeError
+      FrozenError
+    SystemCallError
+      Errno::*
+    ThreadError
+    TypeError
+    ZeroDivisionError
+  SystemExit
+  SystemStackError

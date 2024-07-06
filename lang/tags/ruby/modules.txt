@@ -1,0 +1,9 @@
+module Module
+end
+
+refine Module do
+end
+
+include Module
+extend Module
+using Module

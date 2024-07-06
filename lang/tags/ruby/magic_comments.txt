@@ -1,0 +1,8 @@
+# frozen_string_literal: true
+# encoding: big5
+# warn_indent: true
+
+# shareable_constant_value: none
+# shareable_constant_value: literal
+# shareable_constant_value: experimental_everything
+# shareable_constant_value: experimental_copy

@@ -1,4 +1,3 @@
-tag: user.literals
+tag: user.data_types
 -
 
-string <user.text>:

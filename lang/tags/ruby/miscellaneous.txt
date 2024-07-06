@@ -1,0 +1,9 @@
+alias new_name old_name
+undef method
+defined? name
+
+require "file/path"
+
+attr_reader <list>
+attr_writer <list>
+attr_accessor <list>

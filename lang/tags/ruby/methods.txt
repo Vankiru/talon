@@ -1,0 +1,46 @@
+def method
+end
+
+def method(<args>)
+end
+
+def method = <code>
+def method(<args>) = <code>
+
+super
+super(<args>)
+yield 
+yield self
+yield <args>
+return
+return <list>
+
+method
+method(<args>)
+method <args>
+
+object.method
+self.method
+object.chain.method
+object&.method
+
+method do
+end
+method do |<args>|
+end
+method { }
+method { |<args>| }
+method {
+}
+
+(a, b = 1)
+(a:, b: 1)
+(a, *b)
+(a, **b)
+(a, &block)
+(a, ...)
+
+(*)
+(**)
+(&)
+(...)
