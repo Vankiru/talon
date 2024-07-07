@@ -1,4 +1,4 @@
-<variable> = <value>
+<variable> = <expression>
 
 alias <new_name> <old_name>
 undef <method>

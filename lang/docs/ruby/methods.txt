@@ -4,8 +4,8 @@ end
 def <method>(<args>)
 end
 
-def <method> = <expression>
-def <method>(<args>) = <expression>
+def <method> = <code>
+def <method>(<args>) = <code>
 
 super
 super(<args>)
@@ -13,7 +13,7 @@ yield
 yield self
 yield <args>
 return
-return <list>
+return <expressions>
 
 <method>
 <method>(<args>)
@@ -34,9 +34,10 @@ end
 }
 
 # <args>
-<variable>, <variable>
+<variables>
 <variable> = <value>
-<variable>:, <variable>: <value>
+<variable>:
+<variable>: <value>
 *<variable>
 **<variable>
 &block

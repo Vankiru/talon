@@ -47,7 +47,7 @@ end while <condition>
 until <condition> do
 end
 
-for <value> in <list> do
+for <variables> in <list> do
 end
 
 <expression> while <condition>

@@ -1,4 +1,7 @@
 len(<expression>)
 range(<int>)
 
+enumerate(<expression>)
+zip(<expression>, <expression>)
+
 print(<expression>)

@@ -17,5 +17,3 @@ raise <class>
 raise <class>(<args>)
 raise <class> from <variable>
 raise <class> from None
-
-with <expression> as <variable>

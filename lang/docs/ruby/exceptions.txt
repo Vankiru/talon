@@ -31,8 +31,8 @@ def <method>
 rescue
 end
 
-raise <value>
-raise <class>, <value>
+raise <expression>
+raise <class>, <expression>
 raise <class>.new(<args>)
 
 Exception

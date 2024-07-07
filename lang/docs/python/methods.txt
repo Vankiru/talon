@@ -2,13 +2,13 @@ def <method>():
 def <method>(<args>):
 def <method>(<args>): -> <type>
 
-def <method>: <expression>
-def <method>(<args>): <expression>
+def <method>: <code>
+def <method>(<args>): <code>
 
-lambda <args> : <expression>
+lambda <args> : <code>
 
 return
-return <values>
+return <expressions>
 
 <method>()
 <method>(<args>)
@@ -18,7 +18,7 @@ self.<method>
 <variable>.<method>.<method>
 
 # <args>
-<variable>, <variable>
+<variables>
 <variable>=<value>
 *<variable>
 **<variable>

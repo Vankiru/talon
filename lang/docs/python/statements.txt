@@ -1,5 +1,5 @@
-<variable> = <value>
-<variable> : <type> = <value>
+<variable> = <expression>
+<variable> : <type> = <expression>
 
 import <module>
 from <module> import <methods>
