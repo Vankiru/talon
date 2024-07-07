@@ -1,0 +1,7 @@
+<variable> = <value>
+
+alias <new_name> <old_name>
+undef <method>
+defined? <name>
+
+require "file/path"

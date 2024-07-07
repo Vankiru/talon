@@ -1,0 +1,21 @@
+# <module>
+modulename
+module_name
+
+# <package>
+packagename
+
+# <variable>
+variable_name
+_private_variable
+reserved_name_
+__name_mangling
+
+# <method>
+method_name
+
+# <const>
+CONSTANT_NAME
+
+# <class>
+ClassName

@@ -1,0 +1,82 @@
+if <condition>
+end
+
+if <condition>
+else
+end
+
+if <condition>
+elsif <condition>
+else
+end
+
+unless <condition>
+end
+
+unless <condition>
+else
+end
+
+<expression> if <condition>
+<expression> unless <condition>
+
+<condition> ? <expression> : <expression>
+(<condition>) ? <expression> : <expression>
+
+case <expression>
+when <value>
+else
+end
+
+case <expression>
+when <value> then <expression>
+else <expression>
+end
+
+case <expressiob>
+in <pattern>
+else
+end
+
+while <condition> do
+end
+
+begin
+end while <condition>
+
+until <condition> do
+end
+
+for <value> in <list> do
+end
+
+<expression> while <condition>
+<expression> until <condition>
+
+<expression>.each do |<item>|
+end
+<expression>.each do |(<list>)|
+end
+
+<expression>.map do |<item>|
+end
+<expression>.map do |(<list>)|
+end
+
+break
+break if <condition>
+break <expression>
+break <expression> if <condition>
+
+next
+next if <condition>
+next <expression>
+next <expression> if <condition>
+
+redo
+redo if <condition>
+
+throw <symbol>, <symbol>
+throw(<symbol>, <symbol>)
+catch(<symbol>) do
+end

@@ -1,7 +1,9 @@
+# <bool>
 true
 false
 nil
 
+# <number>
 123
 1_234
 1.23
@@ -9,6 +11,7 @@ nil
 1 + 2i
 12.3ri
 
+# <string>
 ""
 ''
 "string"
@@ -29,12 +32,14 @@ INDENTED
 string
 SQUIGGLY
 
+# <symbol>
 :symbol
 :"symbol"
 :'symbol'
 
-#{string}
+#{value}
 
+# <list>
 []
 %w()
 %i()
@@ -47,6 +52,7 @@ SQUIGGLY
 %w(1 2 3)
 %i(1 2 3)
 
+# <hash>
 {}
 { a: 1, b: 2 }
 { "a": 1, "b": 2 }
@@ -56,12 +62,15 @@ SQUIGGLY
   b: 2
 }
 
+# <range>
 (1..2)
 (1...3)
 (1..)
 (..1)
 
+# <regex>
 /regex/
 
+# <lambda>
 -> { 1 + 1 }
 ->(key) { 1 + 1 }

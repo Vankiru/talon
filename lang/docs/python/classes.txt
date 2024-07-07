@@ -1,0 +1,9 @@
+class <class>:
+class <class>(<class>):
+class <class>(<class>, <class>):
+
+<variable> : <type>
+<variable> : <type> = <value>
+
+def __init__(self, <args>):
+def <method>(self, <args>):

@@ -1,0 +1,25 @@
+# <file>
+file_name 
+
+# <variable>
+variable_name
+
+# <method>
+method_name
+
+# <@instance>
+@instance_variable
+
+# <@@class>
+@@class_variable
+
+# <global>
+$global_variable
+
+# <const>
+CONSTANT_NAME
+
+# <class>, <module>
+ClassName
+Class::Name
+::ClassName

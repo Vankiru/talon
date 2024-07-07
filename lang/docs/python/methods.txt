@@ -1,0 +1,29 @@
+def <method>():
+def <method>(<args>):
+def <method>(<args>): -> <type>
+
+def <method>: <expression>
+def <method>(<args>): <expression>
+
+lambda <args> : <expression>
+
+return
+return <values>
+
+<method>()
+<method>(<args>)
+
+<variable>.<method>
+self.<method>
+<variable>.<method>.<method>
+
+# <args>
+<variable>, <variable>
+<variable>=<value>
+*<variable>
+**<variable>
+
+<variable>: <type>
+<variable>: <type> = <value>
+
+positional, /, positional_or_keyword, *, keyword

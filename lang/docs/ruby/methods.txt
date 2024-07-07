@@ -1,0 +1,47 @@
+def <method>
+end
+
+def <method>(<args>)
+end
+
+def <method> = <expression>
+def <method>(<args>) = <expression>
+
+super
+super(<args>)
+yield 
+yield self
+yield <args>
+return
+return <list>
+
+<method>
+<method>(<args>)
+<method> <args>
+
+<variable>.<method>
+self.<method>
+<variable>.<method>.<method>
+<variable>&.<method>
+
+<method> do
+end
+<method> do |<args>|
+end
+<method> { }
+<method> { |<args>| }
+<method> {
+}
+
+# <args>
+<variable>, <variable>
+<variable> = <value>
+<variable>:, <variable>: <value>
+*<variable>
+**<variable>
+&block
+
+*
+**
+&
+...

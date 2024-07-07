@@ -1,0 +1,14 @@
+<variable> = <value>
+<variable> : <type> = <value>
+
+import <module>
+from <module> import <methods>
+
+global <variables>
+nonlocal <variables>
+del <expression>
+
+with <expression> as <variable>:
+
+# <decorator>
+@<expression>

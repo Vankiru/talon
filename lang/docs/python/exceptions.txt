@@ -1,0 +1,21 @@
+try:
+except <class>:
+else:
+finally:
+
+try:
+except <class> as <variable>:
+
+try:
+except <class>, <class>:
+
+try:
+except <class>:
+except <class>:
+
+raise <class>
+raise <class>(<args>)
+raise <class> from <variable>
+raise <class> from None
+
+with <expression> as <variable>

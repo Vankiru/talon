@@ -1,0 +1,22 @@
+class <class>
+end
+
+class <class> < <class>
+end
+
+class << self
+end
+
+def initialize(<args>)
+end
+
+protected
+private
+protected :<method>
+private :<method>
+
+attr_reader <list>
+attr_writer <list>
+attr_accessor <list>
+
+ClassName.new(<args>)

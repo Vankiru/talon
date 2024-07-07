@@ -1,0 +1,4 @@
+len(<expression>)
+range(<int>)
+
+print(<expression>)

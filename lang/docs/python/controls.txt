@@ -1,0 +1,32 @@
+if <condition>:
+
+if <condition>:
+else:
+
+if <condition>:
+elsif <condition>:
+else:
+
+for <variables> in <list>:
+for <index> in range(<int>):
+for <index>, <value> in enumerate(<list>):
+for <value>, <value> in zip(<list>, <list>):
+
+for <variables> in <list>:
+else:
+
+[<expression> for <variables> in <list>]
+[<expression> for <variables> in <list> if <condition>]
+
+while <condition>:
+
+while <condition>:
+else:
+
+match <expression>:
+  case <value>:
+  case _:
+
+break
+continue
+pass
