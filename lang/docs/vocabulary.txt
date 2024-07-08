@@ -1,0 +1,118 @@
+# actions
+create - new
+delete - chunk
+rename - change
+append - 
+search - go to
+clear  - empty
+
+# tokens
+
+# arguments
+art
+art default
+art block
+
+# classes
+class
+super(class)
+self class
+class meth (python)
+class init
+protected
+private
+(read | red) (list | least)
+(write | right) (list | least)
+(access | axis) (list | least)
+class new (?)
+
+# comments
+comment
+frozen string
+
+# controls
+if (do)
+else
+elf (elsif)
+unless (do)
+(short | line) if
+(short | line) unless
+case | keys
+when (do)
+then
+case in
+match (python)
+while (do)
+until (do)
+begin (do)
+for in (?)
+(short | line) while
+(short | line) until
+each do
+each in
+each do arts
+map do
+map do arts
+break
+break if
+(loop) next (?)
+(loop) next if (?)
+(loop) redo (?)
+(loop) redo if (?)
+throw
+catch
+continue (python)
+pass (python)
+
+# data types
+true
+falls | false
+none | nun
+string
+single string (?)
+doc string
+sim | symbol
+list
+hash
+set
+range
+block
+regex (?)
+typle (python)
+
+# exceptions
+begin (do)
+rescue
+ensure
+raise
+try (python)
+except (python)
+
+# methods
+(met | meth)
+(short | line) meth
+(meth) super
+yield
+return
+meth do
+meth (short | line) do
+call
+self call
+
+# modules
+module | mod | model
+include
+extend
+using
+
+# names
+global
+
+# operators
+index ([])
+match
+
+# statements
+set <variable> to <expression>
+require
+
