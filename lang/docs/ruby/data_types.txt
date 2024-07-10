@@ -51,6 +51,7 @@ SQUIGGLY
 ]
 %w(1 2 3)
 %i(1 2 3)
+Array.new([1, 2, 3])
 
 # <hash>
 {}
@@ -61,15 +62,18 @@ SQUIGGLY
   a: 1,
   b: 2
 }
+Hash.new()
 
 # <range>
 (1..2)
 (1...3)
 (1..)
 (..1)
+Range.new(1, 2)
 
 # <regex>
 /regex/
+Regexp.new("regex")
 
 # <lambda>
 -> { 1 + 1 }

@@ -140,3 +140,11 @@ up:
   
 down:
   user.vim_normal_mode("j")
+
+line below:
+  user.vim_normal_mode("o")
+  key(escape)
+
+line above:
+  user.vim_normal_mode("O")
+  key(escape)

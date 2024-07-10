@@ -1,4 +1,39 @@
 from talon import Module
 
 mod = Module()
-mod.tag("data_types", desc="Enables commands for entering literals")
+mod.tag("code_data_types", desc="Commands for adding literals")
+
+@mod.action_class
+class Actions:
+    def code_data_type_true():
+        """True"""
+
+    def code_data_type_false():
+        """False"""
+
+    def code_data_type_none():
+        """None/nil"""
+
+    def code_data_type_string(text: str):
+        """Double quoted string"""
+
+    def code_data_type_quote_string(text: str):
+        """Single quoted string"""
+
+    def code_data_type_multiline_string(text: str):
+        """Multiline string"""
+
+    def code_data_type_list():
+        """List/array"""
+
+    def code_data_type_multiline_list():
+        """Multiline list/array"""
+
+    def code_data_type_hash():
+        """Hash/dict"""
+
+    def code_data_type_multiline_hash():
+        """Multiline hash/dict"""
+
+    def code_data_type_set():
+        """Set"""

@@ -1,5 +1,5 @@
 # actions
-create - new
+create - (blank)
 delete - chunk
 rename - change
 append - 
@@ -12,6 +12,10 @@ clear  - empty
 art
 art default
 art block
+items
+item
+item default
+item block
 
 # classes
 class
@@ -28,6 +32,7 @@ class new (?)
 
 # comments
 comment
+line comment
 frozen string
 
 # controls
@@ -71,14 +76,14 @@ none | nun
 string
 single string (?)
 doc string
-sim | symbol
+symbol | sim | seem
 list
 hash
 set
 range
 block
 regex (?)
-typle (python)
+tuple (python)
 
 # exceptions
 begin (do)

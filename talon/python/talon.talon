@@ -23,3 +23,16 @@ talon insert:
   user.vim_insert_mode("actions.insert(\"\")", "o")
   insert("hi")
 
+# Actions
+
+talon tag file:
+  command = """from talon import Module
+
+  mod = Module()
+  mod.tag("", desc="")
+
+  @mod.action_class
+  class Actions:
+  """
+
+  user.vim_insert_mode(command)
