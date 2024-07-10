@@ -14,10 +14,10 @@ string <user.text>:
   user.code_data_type_string(text)
 
 quote string <user.text>:
-  user.code_data_type_quote_string()
+  user.code_data_type_quote_string(text)
 
-multi string:
-  user.code_data_type_multiline_string()
+multi string <user.text>:
+  user.code_data_type_multiline_string(text)
 
 list:
   user.code_data_type_list()

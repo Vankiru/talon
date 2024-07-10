@@ -35,8 +35,7 @@ user call <user.text>:
 # Talon title contexts
 
 (talon | talent) title:
-  command = """
-  title: /\w*\.talon (.*) - VIM/
+  command = """title: /\w*\.talon (.*) - VIM/
   -
 
   """
@@ -44,8 +43,7 @@ user call <user.text>:
   user.vim_insert_mode(command)
 
 (talon | talent) title python:
-  command = """
-  title: /\w*\.py (.*) - VIM/
+  command = """title: /\w*\.py (.*) - VIM/
   -
 
   """
@@ -53,8 +51,7 @@ user call <user.text>:
   user.vim_insert_mode(command)
 
 (talon | talent) title ruby:
-  command = """
-  title: /\w*\.rb (.*) - VIM/
+  command = """title: /\w*\.rb (.*) - VIM/
   -
 
   """
