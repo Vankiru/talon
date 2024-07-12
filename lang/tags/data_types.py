@@ -29,11 +29,20 @@ class Actions:
     def code_data_type_multiline_list():
         """Multiline list/array"""
 
+    def code_data_type_object_list():
+        """Class/method definition of list/array"""
+
     def code_data_type_hash():
         """Hash/dict"""
 
     def code_data_type_multiline_hash():
         """Multiline hash/dict"""
+
+    def code_data_type_object_hash():
+        """Class/method definition of hash/dict"""
+
+    def code_data_type_hash_pair(text: str):
+        """Hash/dict key: value"""
 
     def code_data_type_set():
         """Set"""

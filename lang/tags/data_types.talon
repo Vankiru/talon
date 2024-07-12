@@ -25,11 +25,26 @@ list:
 multi list:
   user.code_data_type_multiline_list()
 
+object list:
+  user.code_data_type_object_list()
+
 hash:
   user.code_data_type_hash()
 
 multi hash:
   user.code_data_type_multiline_hash()
+
+object hash:
+  user.code_data_type_object_hash()
+
+hash <user.text> to:
+  user.code_data_type_hash_pair(text)
+
+hash <user.letter> to:
+  user.code_data_type_hash_letter_pair(letter)
+
+hash <user.number> to:
+  user.code_data_type_hash_number_pair(number)
 
 (set | said):
   user.code_data_type_set()

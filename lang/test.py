@@ -9,3 +9,5 @@
  ]
  {
  }
+ list() dict() {} "a": "application": "first_application": {} {} {} None
+ { "application": "one" {}}

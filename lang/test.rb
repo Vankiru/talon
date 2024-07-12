@@ -8,3 +8,5 @@
  ]
  {
  } Set.new()
+ Array.new() Hash.new()
+ application: on: {} a:
