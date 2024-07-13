@@ -17,3 +17,22 @@ Supplication
 """
 "Application and"application""
 "Application end"Application end""""
+"application": 
+"applications": "application"
+"application": 25.1
+()
+(
+        )
+tuple()
+f"application"
+f"{}"
+f"{}"
+"Application"
+f"{Application}"
+f"Application"
+\{{text}\}
+{text}
+{text}
+{application}
+{}
+{Application}

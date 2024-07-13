@@ -47,3 +47,5 @@ Range.new(1, 5, true)
 -> { 12}
 /application/
 //
+#{application}
+#{application}

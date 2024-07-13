@@ -36,6 +36,14 @@ class CodeActions:
         actions.user.vim_insert_mode('"""\n"""', "a")
         actions.insert("O")
 
+    def code_data_types_string_interpolation(text: str):
+        name = actions.user.formatted_text(text, "SNAKE_CASE")
+        actions.user.vim_insert_mode(f"{{{name}}}", "a")
+
+    def code_data_types_empty_string_interpolation():
+        actions.user.vim_insert_mode("{}", "a")
+        actions.insert("i")
+
     def code_data_type_list():
         actions.user.vim_insert_mode("[]", "a")
 

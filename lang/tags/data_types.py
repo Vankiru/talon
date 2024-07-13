@@ -32,6 +32,12 @@ class Actions:
     def code_data_type_empty_multiline_string():
         """Empty multiline string"""
 
+    def code_data_types_string_interpolation(text: str):
+        """String interpolation"""
+
+    def code_data_types_empty_string_interpolation():
+        """Empty string interpolation"""
+
     def code_data_type_list():
         """List/array"""
 

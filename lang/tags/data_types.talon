@@ -34,6 +34,12 @@ multi string <user.text>:
 multi string:
   user.code_data_type_empty_multiline_string()
 
+interpol <user.text>:
+  user.code_data_types_string_interpolation(text)
+
+interpol:
+  user.code_data_types_empty_string_interpolation()
+
 list:
   user.code_data_type_list()
 
