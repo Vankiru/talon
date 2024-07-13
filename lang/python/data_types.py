@@ -16,13 +16,25 @@ class CodeActions:
         actions.user.vim_insert_mode("None", "a")
 
     def code_data_type_string(text: str):
-        actions.user.vim_insert_mode(f"\"{text}\"", "a")
+        actions.user.vim_insert_mode(f'"{text}"', "a")
+
+    def code_data_type_empty_string():
+        actions.user.vim_insert_mode('""', "a")
+        actions.insert("i")
 
     def code_data_type_quote_string(text: str):
         actions.user.vim_insert_mode(f"'{text}'", "a")
 
+    def code_data_type_empty_quote_string():
+        actions.user.vim_insert_mode("''", "a")
+        actions.insert("i")
+
     def code_data_type_multiline_string(text: str):
         actions.user.vim_insert_mode(f'"""\n{text}\n"""', "a")
+
+    def code_data_type_empty_multiline_string():
+        actions.user.vim_insert_mode('"""\n"""', "a")
+        actions.insert("O")
 
     def code_data_type_list():
         actions.user.vim_insert_mode("[]", "a")
@@ -42,7 +54,7 @@ class CodeActions:
     def code_data_type_object_hash():
         actions.user.vim_insert_mode("dict()", "a")
 
-    def code_data_type_hash_pair(text: str):
+    def code_data_type_key_value(text: str):
         key = actions.user.formatted_text(text, "SNAKE_CASE")
         actions.user.vim_insert_mode(f'"{key}": ', "a")
 

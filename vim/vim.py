@@ -18,7 +18,7 @@ class Actions:
     def vim_visual_mode(command: str):
         """Execute in visual mode"""
 
-    def vim_visual_mode_vertical(command: str):
+    def vim_vertical_visual_mode(command: str):
         """Execute in vertical visual mode"""
 
     def vim_command_mode(command: str):
@@ -49,9 +49,9 @@ class VimActions:
     def vim_visual_mode(command: str):
         """Execute in visual mode"""
         actions.key("escape")
-        actions.insert("v{}".format(command))
+        actions.insert(f"v{command}")
 
-    def vim_visual_mode_vertical(command: str):
+    def vim_vertical_visual_mode(command: str):
         """Execute in vertical visual mode"""
         actions.key("escape")
         actions.key(ctrl-v)
@@ -60,11 +60,11 @@ class VimActions:
     def vim_command_mode(command: str):
         """Execute in command mode"""
         actions.key("escape")
-        actions.insert(":{}".format(command))
+        actions.insert(f":{command}")
         actions.key("enter")
 
     def vim_select_lines(number_string: str):
         """Select multiple lines"""
         number = int(number_string) - 1
         actions.key("escape")
-        actions.insert("v{}j".format(number))
+        actions.insert(f"v{number}j")

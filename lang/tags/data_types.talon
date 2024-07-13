@@ -13,11 +13,20 @@ true:
 string <user.text>:
   user.code_data_type_string(text)
 
+string:
+  user.code_data_type_empty_string()
+
 quote string <user.text>:
   user.code_data_type_quote_string(text)
 
+quote string:
+  user.code_data_type_empty_quote_string()
+
 multi string <user.text>:
   user.code_data_type_multiline_string(text)
+
+multi string:
+  user.code_data_type_empty_multiline_string()
 
 list:
   user.code_data_type_list()
@@ -37,14 +46,8 @@ multi hash:
 object hash:
   user.code_data_type_object_hash()
 
-hash <user.text> to:
-  user.code_data_type_hash_pair(text)
-
-hash <user.letter> to:
-  user.code_data_type_hash_letter_pair(letter)
-
-hash <user.number> to:
-  user.code_data_type_hash_number_pair(number)
+key <user.text> [to]:
+  user.code_data_type_key_value(text)
 
 (set | said):
   user.code_data_type_set()

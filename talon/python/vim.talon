@@ -40,11 +40,11 @@ vim visual:
   insert("hi")
 
 vim vertical <user.letters>:
-  command = "actions.user.vim_visual_mode_vertical(\"{letters}\")"
+  command = "actions.user.vim_vertical_visual_mode(\"{letters}\")"
   user.vim_insert_mode(command, "o")
 
 vim vertical:
-  command = "actions.user.vim_visual_mode_vertical(\"\")"
+  command = "actions.user.vim_vertical_visual_mode(\"\")"
   user.vim_insert_mode(command, "o")
   insert("hi")
 

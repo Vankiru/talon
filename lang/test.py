@@ -11,3 +11,9 @@
  }
  list() dict() {} "a": "application": "first_application": {} {} {} None
  { "application": "one" {}}
+""
+"""
+Supplication
+"""
+"Application and"application""
+"Application end"Application end""""

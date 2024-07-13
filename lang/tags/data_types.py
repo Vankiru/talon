@@ -15,13 +15,22 @@ class Actions:
         """None/nil"""
 
     def code_data_type_string(text: str):
-        """Double quoted string"""
+        """Double quote string"""
+
+    def code_data_type_empty_string():
+        """Empty double quote string"""
 
     def code_data_type_quote_string(text: str):
         """Single quoted string"""
 
+    def code_data_type_empty_quote_string():
+        """Empty single quoted string"""
+
     def code_data_type_multiline_string(text: str):
         """Multiline string"""
+
+    def code_data_type_empty_multiline_string():
+        """Empty multiline string"""
 
     def code_data_type_list():
         """List/array"""
@@ -41,7 +50,7 @@ class Actions:
     def code_data_type_object_hash():
         """Class/method definition of hash/dict"""
 
-    def code_data_type_hash_pair(text: str):
+    def code_data_type_key_value(text: str):
         """Hash/dict key: value"""
 
     def code_data_type_set():
