@@ -10,6 +10,12 @@ true:
 (none | nun):
   user.code_data_type_none()
 
+number <user.number_string>:
+  user.vim_insert_mode(number_string, "a")
+
+number <user.number_string> point <user.number_string>:
+  user.vim_insert_mode("{number_string_1}.{number_string_2}", "a")
+
 string <user.text>:
   user.code_data_type_string(text)
 

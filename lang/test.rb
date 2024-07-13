@@ -31,3 +31,19 @@ application: "application"
 application: 
 "application""application": "application": :application
 application: 
+21
+21.5
+application: 20
+(1..5)
+(4125..)
+(1...5)
+(1..)
+(..5)
+(25...51)
+Range.new(12, 5)
+Range.new(1, 5, true)
+-> { }
+-> { "application"}
+-> { 12}
+/application/
+//
