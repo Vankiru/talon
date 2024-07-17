@@ -1,7 +1,7 @@
 title: /VIM/
 -
 
-# Shared talon commands for .py and .talon files
+# Captures
 
 (talon | talent) letter:
   user.vim_insert_mode(" <user.letter>")
@@ -14,3 +14,6 @@ title: /VIM/
   
 (talon | talent) text:
   user.vim_insert_mode(" <user.text>")
+
+(talon | talent) number:
+  user.vim_insert_mode(" <user.number_string>")

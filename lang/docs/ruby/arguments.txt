@@ -1,0 +1,13 @@
+# <args>
+<variables>
+<variable> = <value>
+<variable>:
+<variable>: <value>
+*<variable>
+**<variable>
+&block
+
+*
+**
+&
+...

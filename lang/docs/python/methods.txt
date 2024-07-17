@@ -16,14 +16,3 @@ return <expressions>
 <variable>.<method>
 self.<method>
 <variable>.<method>.<method>
-
-# <args>
-<variables>
-<variable>=<value>
-*<variable>
-**<variable>
-
-<variable>: <type>
-<variable>: <type> = <value>
-
-positional, /, positional_or_keyword, *, keyword
