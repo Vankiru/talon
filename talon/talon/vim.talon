@@ -30,6 +30,15 @@ vim insert:
   user.vim_insert_mode(command, "o")
   insert("hi")
 
+vim insert after <user.word>:
+  command = 'user.vim_insert_mode({word}, "a")'
+  user.vim_insert_mode(command, "o")
+
+vim insert after:
+  command = 'user.vim_insert_mode("", "a")'
+  user.vim_insert_mode(command, "o")
+  insert("6hi")
+
 vim visual <user.letters>:
   command = "user.vim_visual_mode(\"{letters}\")"
   user.vim_insert_mode(command, "o")

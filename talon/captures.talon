@@ -3,17 +3,17 @@ title: /VIM/
 
 # Captures
 
-(talon | talent) letter:
+capture letter:
   user.vim_insert_mode(" <user.letter>")
   
-(talon | talent) letters:
+capture letters:
   user.vim_insert_mode(" <user.letters>")
 
-(talon | talent) word:
+capture word:
   user.vim_insert_mode(" <user.word>")
   
-(talon | talent) text:
+capture text:
   user.vim_insert_mode(" <user.text>")
 
-(talon | talent) number:
+capture number:
   user.vim_insert_mode(" <user.number_string>")

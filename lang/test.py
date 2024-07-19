@@ -36,3 +36,9 @@ f"Application"
 {application}
 {}
 {Application}
+()(), ,
+application=125
+="application"
+application: int
+: list[int]
+: tuple[complex]

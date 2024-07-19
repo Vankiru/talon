@@ -50,3 +50,15 @@ Range.new(1, 5, true)
 #{application}
 #{application}
 "#{application}"
+"application", "setting",
+, ,
+:setting, 125, "now",
+()()
+*applications, *application
+**variables, **applications
+variable = variable_too = were_able = 125
+application = 125
+(application = 1, application: ,  
+(application:, application:)
+&application, &
+.........

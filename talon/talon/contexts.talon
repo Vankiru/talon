@@ -17,3 +17,8 @@ code python:
 code ruby:
   user.vim_insert_mode("title: /\w*\.rb (.*) - VIM/")
 
+# Tags
+
+user tag <user.text>:
+  tag = user.formatted_text(text, "SNAKE_CASE")
+  user.vim_insert_mode("tag: user.{tag}")
