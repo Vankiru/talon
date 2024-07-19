@@ -1,7 +1,7 @@
 from talon import Module
 
 mod = Module()
-mod.tag("code_arguments", desc="Argumets commands")
+mod.tag("code_arguments", desc="Arguments commands")
 
 @mod.action_class
 class Actions:

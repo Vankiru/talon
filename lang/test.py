@@ -42,3 +42,11 @@ application=125
 application: int
 : list[int]
 : tuple[complex]
+application_type
+_application_type
+self.application_type
+APPLICATION_TYPE
+ApplicationType
+application_type_
+__application_type
+applicationtype

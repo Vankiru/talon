@@ -61,4 +61,14 @@ application = 125
 (application = 1, application: ,  
 (application:, application:)
 &application, &
-.........
+...
+application_type
+application_type
+@application_type
+self.application_type
+APPLICATION_TYPE
+ApplicationType
+Application::Rental
+::Application
+@@application_type
+$application_type

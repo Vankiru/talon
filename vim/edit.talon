@@ -7,11 +7,11 @@ in <user.text>:
 in space <user.text>:
   user.vim_insert_mode(" {text}")
 
-line (below | down):
+[new] line [below | down]:
   user.vim_normal_mode("o")
   key(escape)
 
-line (above | up):
+[new] line (above | up):
   user.vim_normal_mode("O")
   key(escape)
 
