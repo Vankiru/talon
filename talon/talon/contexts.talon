@@ -1,11 +1,6 @@
 title: /\w*\.talon (.*) - VIM/
 -
 
-# Context headers end
-
-(header | body):
-  user.vim_insert_mode("-\n", "o")
-
 # Code languages
 
 code talon:
@@ -19,6 +14,12 @@ code ruby:
 
 # Tags
 
-user tag <user.text>:
+context tag <user.text>:
   tag = user.formatted_text(text, "SNAKE_CASE")
   user.vim_insert_mode("tag: user.{tag}")
+
+# Context headers end
+
+(header | body):
+  user.vim_insert_mode("-\n", "o")
+

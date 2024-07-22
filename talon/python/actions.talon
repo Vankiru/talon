@@ -1,66 +1,27 @@
 title: /\w*\.py (.*) - VIM/
 -
 
-# Commands for defining actions
+# Actions
 
-# Separate commands
+user action <user.text>:
+  method = user.formatted_text(text, "SNAKE_CASE")
+  user.vim_insert_mode("actions.user.{method}()")
 
-talon import:
-  user.vim_insert_mode("from talon import Context, Module, actions")
+format snake <user.text>:
+  variable = user.code_snake_case(text)
+  command = '{variable} = actions.user.code_snake_case(text)'
 
-talon (module | model) import:
-  user.vim_insert_mode("from talon import Module")
+  user.vim_insert_mode(command, "o")
 
-talon new (module | model):
-  user.vim_insert_mode("mod = Module()", "o")
+format scream <user.text>:
+  variable = user.code_snake_case(text)
+  command = '{variable} = actions.user.code_screaming_case(text)'
 
-talon new context:
-  user.vim_insert_mode("ctx = Context()", "o")
+  user.vim_insert_mode(command, "o")
 
-# Blocks
+format camel <user.text>:
+  variable = user.code_snake_case(text)
+  command = '{variable} = actions.user.code_camel_case(text)'
 
-talon head:
-  command = """from talon import Context, Module, actions
-
-  mod = Module()
-  ctx = Context()
-  ctx.matches = "title: /VIM/"
-  """
-
-  user.vim_insert_mode(command)
-
-talon (model | module) actions:
-  command = """
-  @mod.action_class
-  class Actions:
-      pass
-  """
-
-  user.vim_insert_mode(command)
-
-talon actions <user.text>:
-  class_name = user.formatted_text(text, "PRIVATE_CAMEL_CASE")
-
-  command = """
-  @ctx.action_class("user")
-  class {class_name}Actions:
-      pass
-  """
-
-  user.vim_insert_mode(command)
-
-# File templates
-
-talon tag file:
-  command = """from talon import Module
-
-  mod = Module()
-  mod.tag("", desc="")
-
-  @mod.action_class
-  class Actions:
-      pass
-  """
-
-  user.vim_insert_mode(command)
+  user.vim_insert_mode(command, "o")
 

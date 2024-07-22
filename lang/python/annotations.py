@@ -1,7 +1,6 @@
-from talon import Context, Module, actions
+from talon import Module
 
 mod = Module()
-ctx = Context()
 
 CODE_ANNOTATION_TYPES = {
         "bool": "bool",

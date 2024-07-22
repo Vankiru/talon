@@ -21,21 +21,23 @@ vim key:
   user.vim_insert_mode(command, "o")
   insert("hi")
 
-vim insert <user.word>:
-  command = "user.vim_insert_mode({word})"
-  user.vim_insert_mode(command, "o")
-
 vim insert:
   command = "user.vim_insert_mode(\"\")"
   user.vim_insert_mode(command, "o")
   insert("hi")
 
-vim insert after <user.word>:
-  command = 'user.vim_insert_mode({word}, "a")'
-  user.vim_insert_mode(command, "o")
-
 vim insert after:
   command = 'user.vim_insert_mode("", "a")'
+  user.vim_insert_mode(command, "o")
+  insert("6hi")
+
+vim insert below:
+  command = 'user.vim_insert_mode("", "o")'
+  user.vim_insert_mode(command, "o")
+  insert("6hi")
+
+vim insert above:
+  command = 'user.vim_insert_mode("", "O")'
   user.vim_insert_mode(command, "o")
   insert("6hi")
 

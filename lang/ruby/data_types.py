@@ -1,6 +1,5 @@
-from talon import Context, Module, actions
+from talon import Context, actions
 
-mod = Module()
 ctx = Context()
 ctx.matches = "title: /\w*\.rb (.*) - VIM/"
 

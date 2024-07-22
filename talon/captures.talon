@@ -17,3 +17,9 @@ capture text:
 
 capture number:
   user.vim_insert_mode(" <user.number_string>")
+
+capture anna:
+  user.vim_insert_mode(" <user.code_annotation_type>")
+
+capture ruby class:
+  user.vim_insert_mode(" <user.code_ruby_class_name>")

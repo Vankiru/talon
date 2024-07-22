@@ -1,7 +1,7 @@
 title: /\w*\.py (.*) - VIM/
 -
 
-# Talon comands for .py files
+# Keys commands
 
 talon escape:
   user.vim_insert_mode("actions.key(\"escape\")", "o")
