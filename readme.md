@@ -50,7 +50,7 @@ key(<word>)
 # talon key
 key()
 
-talon insert
+# talon insert
 insert("")
 ```
 
@@ -152,6 +152,9 @@ from talon import Context, Module, actions
 # talon import (module | model)
 from talon import Module
 
+# talon import context
+  from talon import Context, actions
+
 # talon new (module | model)
 mod = Module()
 
@@ -213,7 +216,7 @@ class CodeActions:
 from talon import Context, actions
 
 ctx = Context()
-ctx.matches = "title: /\w*\.rb (.*) - VIM/"
+ctx.matches = "title: /\w*\.py (.*) - VIM/"
 
 @ctx.action_class("user")
 class CodeActions:
