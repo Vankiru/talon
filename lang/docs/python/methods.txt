@@ -2,7 +2,6 @@ def <method>():
 def <method>(<args>):
 def <method>(<args>): -> <type>
 
-def <method>: <code>
 def <method>(<args>): <code>
 
 lambda <args> : <code>

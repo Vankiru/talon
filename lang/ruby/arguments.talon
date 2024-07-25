@@ -19,3 +19,7 @@ block art:
 
 forward art:
   user.vim_insert_mode("...", "a")
+
+barbs:
+  user.vim_insert_mode(" ||", "a")
+  insert("h")
