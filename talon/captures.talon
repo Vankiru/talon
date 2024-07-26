@@ -21,5 +21,17 @@ capture number:
 capture anna:
   user.vim_insert_mode(" <user.code_annotation_type>")
 
-capture ruby class:
-  user.vim_insert_mode(" <user.code_ruby_class_name>")
+capture key:
+  user.vim_insert_mode(" <user.key_name>")
+
+capture variable:
+  user.vim_insert_mode(" <user.variable_name>")
+
+capture met:
+  user.vim_insert_mode(" <user.method_name>")
+
+capture const:
+  user.vim_insert_mode(" <user.const_name>")
+
+capture class:
+  user.vim_insert_mode(" <user.class_name>")

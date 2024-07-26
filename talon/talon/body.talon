@@ -5,7 +5,7 @@ title: /\w*\.talon (.*) - VIM/
 
 body tag <user.text>:
   tag = user.formatted_text(text, "SNAKE_CASE")
-  user.vim_insert_mode("tag(): user.{tag}")
+  user.vim_insert_mode("tag(): user.{tag}", "o")
 
 # Rules
 

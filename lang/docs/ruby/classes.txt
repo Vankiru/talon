@@ -15,8 +15,4 @@ private
 protected :<method>
 private :<method>
 
-attr_reader <list>
-attr_writer <list>
-attr_accessor <list>
-
 ClassName.new(<args>)
