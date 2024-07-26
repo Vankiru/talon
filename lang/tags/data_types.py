@@ -32,7 +32,7 @@ class Actions:
     def code_data_type_empty_multiline_string():
         """Empty multiline string"""
 
-    def code_data_types_string_interpolation(text: str):
+    def code_data_types_string_interpolation(name: str):
         """String interpolation"""
 
     def code_data_types_empty_string_interpolation():
@@ -56,7 +56,7 @@ class Actions:
     def code_data_type_object_hash():
         """Class/method definition of hash/dict"""
 
-    def code_data_type_key_value(text: str):
+    def code_data_type_key_value(key: str):
         """Hash/dict key: value"""
 
     def code_data_type_set():

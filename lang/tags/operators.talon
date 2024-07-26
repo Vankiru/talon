@@ -22,8 +22,8 @@ power:
 set to:
   user.code_operator_set_to()
 
-set <user.text> [to]:
-  user.code_operator_set_variable_to(text)
+set <user.variable_name> [to]:
+  user.code_operator_set_variable_to(variable_name)
 
 plus equal:
   user.code_operator_plus_equal()

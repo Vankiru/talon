@@ -3,14 +3,11 @@ title: /\w*\.rb (.*) - VIM/
 
 tag(): user.code_names
 
-(class | type) instance <user.text>:
-  name = user.code_snake_case(text)
-  user.vim_insert_mode("@@{name}", "a")
+(class | type) instance <user.variable_name>:
+  user.vim_insert_mode("@@{variable_name}", "a")
 
-pack <user.text>:
-  name = user.code_camel_case(text)
-  user.vim_insert_mode("::{name}", "a")
+pack <user.class_name>:
+  user.vim_insert_mode("::{class_name}", "a")
 
-global <user.text>:
-  name = user.code_snake_case(text)
-  user.vim_insert_mode("${name}", "a")
+global <user.variable_name>:
+  user.vim_insert_mode("${variable_name}", "a")

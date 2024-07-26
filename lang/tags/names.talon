@@ -1,18 +1,17 @@
 tag: user.code_names
 -
 
-name <user.text>:
-  user.code_variable_name(text)
+name <user.variable_name>:
+  user.code_variable_name(variable_name)
 
-instance <user.text>:
-  user.code_instance_variable_name(text)
+instance <user.variable_name>:
+  user.code_instance_variable_name(variable_name)
 
-self <user.text>:
-  user.code_self_name(text)
+self <user.variable_name>:
+  user.code_self_name(variable_name)
 
-const <user.text>:
-  user.code_constant_name(text)
+const <user.const_name>:
+  user.code_constant_name(const_name)
 
-type <user.text>:
-  user.code_class_name(text)
-
+type <user.class_name>:
+  user.code_class_name(class_name)

@@ -3,13 +3,11 @@ title: /\w*\.py (.*) - VIM/
 
 tag(): user.code_names
 
-reserve <user.text>:
-  name = user.code_snake_case(text)
-  user.vim_insert_mode("{name}_", "a")
+reserve <user.variable_name>:
+  user.vim_insert_mode("{variable_name}_", "a")
 
-mangle <user.text>:
-  name = user.code_snake_case(text)
-  user.vim_insert_mode("__{name}", "a")
+mangle <user.variable_name>:
+  user.vim_insert_mode("__{variable_name}", "a")
 
 package <user.text>:
   name = user.formatted_text(text, "NO_SPACES")

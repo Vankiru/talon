@@ -34,8 +34,8 @@ multi string <user.text>:
 multi string:
   user.code_data_type_empty_multiline_string()
 
-interpol <user.text>:
-  user.code_data_types_string_interpolation(text)
+interpol <user.variable_name>:
+  user.code_data_types_string_interpolation(variable_name)
 
 interpol:
   user.code_data_types_empty_string_interpolation()
@@ -58,8 +58,8 @@ multi hash:
 object hash:
   user.code_data_type_object_hash()
 
-key <user.text> [to]:
-  user.code_data_type_key_value(text)
+key <user.key_name> [to]:
+  user.code_data_type_key_value(key_name)
 
 (set | said):
   user.code_data_type_set()

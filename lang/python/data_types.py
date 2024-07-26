@@ -35,8 +35,7 @@ class CodeActions:
         actions.user.vim_insert_mode('"""\n"""', "a")
         actions.insert("O")
 
-    def code_data_types_string_interpolation(text: str):
-        name = actions.user.formatted_text(text, "SNAKE_CASE")
+    def code_data_types_string_interpolation(name: str):
         actions.user.vim_insert_mode(f"{{{name}}}", "a")
 
     def code_data_types_empty_string_interpolation():
@@ -61,8 +60,7 @@ class CodeActions:
     def code_data_type_object_hash():
         actions.user.vim_insert_mode("dict()", "a")
 
-    def code_data_type_key_value(text: str):
-        key = actions.user.formatted_text(text, "SNAKE_CASE")
+    def code_data_type_key_value(key: str):
         actions.user.vim_insert_mode(f'"{key}": ', "a")
 
     def code_data_type_set():

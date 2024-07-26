@@ -26,9 +26,8 @@ class CodeActions:
     def code_operator_set_to():
         actions.user.vim_insert_mode(" = ", "a")
 
-    def code_operator_set_variable_to(text: str):
-        variable = actions.user.code_snake_case(text)
-        actions.user.vim_insert_mode(f"{variable} = ", "a")
+    def code_operator_set_variable_to(name: str):
+        actions.user.vim_insert_mode(f"{name} = ", "a")
 
     def code_operator_plus_equal():
         actions.user.vim_insert_mode(" += ", "a")

@@ -12,9 +12,8 @@ yield:
 yield self:
   user.vim_insert_mode("yield self", "o")
 
-(safe | save) (call | cold) <user.text>:
-  name = user.code_snake_case(text)
-  user.vim_insert_mode("&.{name}", "a")
+(safe | save) (call | cold) <user.method_name>:
+  user.vim_insert_mode("&.{method_name}", "a")
 
 (safe | save) (call | cold):
   user.vim_insert_mode("&.", "a")

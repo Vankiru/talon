@@ -26,7 +26,7 @@ class Actions:
     def code_operator_set_to():
         """="""
 
-    def code_operator_set_variable_to(text: str):
+    def code_operator_set_variable_to(name: str):
         """="""
 
     def code_operator_plus_equal():

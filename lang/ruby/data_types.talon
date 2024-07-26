@@ -15,8 +15,8 @@ doc string:
 
 # symbol
 
-sim <user.text>:
-  user.vim_insert_mode(":{text}", "a")
+sim <user.key_name>:
+  user.vim_insert_mode(":{key_name}", "a")
 
 sim:
   user.vim_insert_mode(":", "a")
@@ -32,13 +32,11 @@ sim list:
 
 # key => value
 
-string key <user.text> [to]:
-  name = user.formatted_text(text, "SNAKE_CASE")
-  user.vim_insert_mode('"{name}": ', "a")
+string key <user.key_name> [to]:
+  user.vim_insert_mode('"{key_name}": ', "a")
 
-object key <user.text> [to]:
-  name = user.formatted_text(text, "SNAKE_CASE")
-  user.vim_insert_mode("{name} => ", "a")
+object key <user.variable_name> [to]:
+  user.vim_insert_mode("{variable_name} => ", "a")
 
 # range
 
