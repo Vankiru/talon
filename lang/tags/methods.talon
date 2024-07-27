@@ -16,5 +16,5 @@ short (met | meth):
 return:
   user.code_method_return()
 
-call <user.method_name>:
+(call | cold) <user.method_name>:
   user.code_method_call(method_name)
