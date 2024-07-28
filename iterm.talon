@@ -1,4 +1,5 @@
 app: iterm2
+title: /zsh/
 -
 
 slot next:

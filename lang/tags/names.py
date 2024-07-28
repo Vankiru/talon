@@ -40,6 +40,21 @@ def const_name(m) -> str:
 def class_name(m) -> str:
     return m.camel_name
 
+@mod.capture(rule="<user.snake_name>")
+def file_name(m) -> str:
+    return m.snake_name
+
+@mod.capture(rule="<user.file_name> (slash <user.file_name>)")
+def file_path(m) -> str:
+    names = list(
+        filter(
+            lambda n: n != "slash",
+            list(m)
+        )
+    )
+
+    return "/".join(names)
+
 @mod.action_class
 class Actions:
     def code_snake_case(text: str):
