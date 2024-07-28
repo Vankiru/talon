@@ -19,7 +19,7 @@ divide:
 power:
   user.code_operator_exponent()
 
-set to:
+(set | said) (to | two):
   user.code_operator_set_to()
 
 set <user.variable_name> [to]:

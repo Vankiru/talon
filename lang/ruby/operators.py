@@ -21,7 +21,7 @@ class CodeActions:
         actions.user.vim_insert_mode(" % ", "a")
 
     def code_operator_exponent():
-        actions.user.vim_insert_mode(" ** ", "a")
+        actions.user.vim_insert_mode("**", "a")
 
     def code_operator_set_to():
         actions.user.vim_insert_mode(" = ", "a")

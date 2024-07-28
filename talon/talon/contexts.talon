@@ -4,13 +4,13 @@ title: /\w*\.talon (.*) - VIM/
 # Code languages
 
 code talon:
-  user.vim_insert_mode("title: /\w*\.talon (.*) - VIM/")
+  user.vim_insert_mode("title: /.*\.talon (.*) - VIM/")
 
 code python:
-  user.vim_insert_mode("title: /\w*\.py (.*) - VIM/")
+  user.vim_insert_mode("title: /.*\.py (.*) - VIM/")
 
 code ruby:
-  user.vim_insert_mode("title: /\w*\.rb (.*) - VIM/")
+  user.vim_insert_mode("title: /.*\.rb (.*) - VIM/")
 
 # Tags
 

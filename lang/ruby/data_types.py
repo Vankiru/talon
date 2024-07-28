@@ -44,21 +44,25 @@ class CodeActions:
 
     def code_data_type_list():
         actions.user.vim_insert_mode("[]", "a")
+        actions.insert("h")
 
     def code_data_type_multiline_list():
         actions.user.vim_insert_mode("[\n]")
 
     def code_data_type_object_list():
         actions.user.vim_insert_mode("Array.new()", "a")
+        actions.insert("h")
 
     def code_data_type_hash():
         actions.user.vim_insert_mode("{}", "a")
+        actions.insert("h")
 
     def code_data_type_multiline_hash():
         actions.user.vim_insert_mode("{\n}")
 
     def code_data_type_object_hash():
         actions.user.vim_insert_mode("Hash.new()", "a")
+        actions.insert("h")
 
     def code_data_type_key_value(key: str):
         actions.user.vim_insert_mode(f"{key}: ", "a")

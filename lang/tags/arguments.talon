@@ -3,6 +3,7 @@ tag: user.code_arguments
 
 arts:
   user.vim_insert_mode("()", "a")
+  insert("h")
 
 left art:
   user.vim_insert_mode("(", "a")

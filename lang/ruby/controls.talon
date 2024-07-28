@@ -7,7 +7,7 @@ unless:
   user.vim_insert_mode("unless \nend", "o")
   insert("k$")
 
-line if:
+(line if) | (leaf):
   user.vim_insert_mode(" if ", "a")
 
 line unless:
