@@ -6,17 +6,8 @@ end
 
 begin
 rescue => <variable>
-end
-
-begin
 rescue <class> => <variable>
-end
-
-begin
 rescue <class>, <class>
-end
-
-begin
 rescue <class> 
 rescue <class>
 end

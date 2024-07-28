@@ -1,4 +1,4 @@
-title: /\w*\.py (.*) - VIM/
+title: /.*\.py (.*) - VIM/
 -
 
 # File templates
@@ -25,7 +25,7 @@ talon ruby file:
   command = """from talon import Context, actions
 
   ctx = Context()
-  ctx.matches = "title: /\w*\.rb (.*) - VIM/"
+  ctx.matches = "title: /.*\.rb (.*) - VIM/"
 
   @ctx.action_class("user")
   class CodeActions:
@@ -38,7 +38,7 @@ talon python file:
   command = """from talon import Context, actions
 
   ctx = Context()
-  ctx.matches = "title: /\w*\.py (.*) - VIM/"
+  ctx.matches = "title: /.*\.py (.*) - VIM/"
 
   @ctx.action_class("user")
   class CodeActions:

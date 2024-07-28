@@ -1,0 +1,20 @@
+<method> do
+end
+<method> do |<args>|
+end
+
+<method> { }
+<method> { |<args>| }
+<method> {
+}
+
+<expression>.each do |<item>|
+end
+<expression>.each do |(<list>)|
+end
+
+<expression>.map do |<item>|
+end
+<expression>.map do |(<list>)|
+end
+

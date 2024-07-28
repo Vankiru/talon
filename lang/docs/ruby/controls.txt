@@ -53,16 +53,6 @@ end
 <expression> while <condition>
 <expression> until <condition>
 
-<expression>.each do |<item>|
-end
-<expression>.each do |(<list>)|
-end
-
-<expression>.map do |<item>|
-end
-<expression>.map do |(<list>)|
-end
-
 break
 break if <condition>
 break <expression>

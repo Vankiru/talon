@@ -1,7 +1,7 @@
 from talon import Context, actions
 
 ctx = Context()
-ctx.matches = "title: /\w*\.py (.*) - VIM/"
+ctx.matches = "title: /.*\.py (.*) - VIM/"
 
 @ctx.action_class("user")
 class CodeActions:

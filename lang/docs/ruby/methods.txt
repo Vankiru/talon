@@ -23,12 +23,3 @@ return <expressions>
 self.<method>
 <variable>.<method>.<method>
 <variable>&.<method>
-
-<method> do
-end
-<method> do |<args>|
-end
-<method> { }
-<method> { |<args>| }
-<method> {
-}
