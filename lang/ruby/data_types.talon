@@ -26,9 +26,11 @@ sim:
 
 string list:
   user.vim_insert_mode("%w[]", "a")
+  insert("h")
 
 sim list:
   user.vim_insert_mode("%i[]", "a")
+  insert("h")
 
 # key => value
 

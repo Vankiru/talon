@@ -1,11 +1,17 @@
 title: /VIM/
 -
 
-in <user.text>:
-  user.vim_insert_mode(text)
+(in | into) <user.text>:
+  user.vim_insert_mode(text, "a")
+
+in | into:
+  insert("a")
 
 in space <user.text>:
   user.vim_insert_mode(" {text}")
+
+in space:
+  insert("a ")
 
 below:
   insert("o ")

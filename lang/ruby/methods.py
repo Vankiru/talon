@@ -21,7 +21,7 @@ class CodeActions:
         actions.insert("2hi")
 
     def code_method_return():
-        actions.user.vim_insert_mode("return ", "o")
+        actions.user.vim_insert_mode("return ", "a")
 
     def code_method_call(name: str):
         actions.user.vim_insert_mode(f".{name}", "a")

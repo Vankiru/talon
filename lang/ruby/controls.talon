@@ -3,14 +3,19 @@ title: /\w*\.rb (.*) - VIM/
 
 tag(): user.code_controls
 
+triplet:
+  user.vim_insert_mode(" ?  : ", "a")
+  insert("3h")
+
 unless:
   user.vim_insert_mode("unless \nend", "o")
   insert("k$")
 
-(line if) | (leaf):
+(line if) | leaf:
   user.vim_insert_mode(" if ", "a")
 
-line unless:
+# unleaf is recognized as "and least" in a long phrase
+(line unless) | unleaf:
   user.vim_insert_mode(" unless ", "a")
 
 case:

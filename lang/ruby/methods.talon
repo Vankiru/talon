@@ -7,7 +7,7 @@ met (is | if) <user.method_name>:
   user.vim_insert_mode("def {method_name}?\nend", "o")
   insert("k$")
 
-met bank <user.method_name>:
+(met bank) | mukbang <user.method_name>:
   user.vim_insert_mode("def {method_name}!\nend", "o")
   insert("k$")
 
@@ -30,7 +30,7 @@ yield self:
 call (is | if) <user.method_name>:
   user.vim_insert_mode(".{method_name}?", "a")
 
-call bank <user.method_name>:
+(bang | bank) <user.method_name>:
   user.vim_insert_mode(".{method_name}!", "a")
 
 block:
