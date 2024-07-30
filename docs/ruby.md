@@ -1,3 +1,5 @@
+# Ruby
+
 - [Arguments](#arguments)
 - [Blocks](#blocks)
 - [Classes](#classes)
@@ -26,16 +28,16 @@
 , 
 # line comma
 ,\n
-# default <name> [to]
-name: 
-# list art <name>
-*name
-# hash art <name>
-**name
-# key art <name>
-name:
-# block art <name>
-&name
+# default <variable_name> [to]
+variable_name: 
+# list art <variable_name>
+*variable_name
+# hash art <variable_name>
+**variable_name
+# key art <variable_name>
+variable_name:
+# block art <variable_name>
+&variable_name
 # forward art
 ...
 ```
@@ -53,16 +55,16 @@ end
 ## Classes
 
 ```ruby
-# class <name>
-class Name
+# class <class_name>
+class ClassName
 end
 
 # self class
 class << self
 end
 
-# superclass <name>
- < Name
+# superclass <class_name>
+ < ClassName
 
 # class init
 def initialize
@@ -75,8 +77,8 @@ protected
 # public
 public
 
-# new <name>
-Name.new
+# new <class_name>
+ClassName.new
 ```
 
 ## Comments
@@ -206,8 +208,8 @@ nil
 "
 text
 "
-# interpol <name>
-#{name}
+# interpol <variable_name>
+#{variable_name}
 # interpol
 #{}
 # doc string <text>
@@ -215,8 +217,8 @@ text
 text
 DOC
 
-# sim <name>
-:name
+# sim <variable_name>
+:variable_name
 
 # list
 []
@@ -272,11 +274,11 @@ Range.new(from, to, true)
 # Exceptions
 
 ```ruby
-# raise <name>
-raise Name
+# raise <class_name>
+raise ClassName
 
-# error <name>
-NameError
+# error <class_name>
+ClassNameError
 
 # begin
 begin
@@ -284,12 +286,12 @@ end
 
 # rescue
 rescue
-# rescue <name>
-rescue Name
-# rescue as <name>
-rescue => name
-# rescue <name> as <name>
-rescue Name => name
+# rescue <class_name>
+rescue ClassName
+# rescue as <variable_name>
+rescue => variable_name
+# rescue <class_name> as <variable_name>
+rescue ClassName => variable_name
 
 # ensure
 ensure
@@ -307,19 +309,19 @@ puts "text"
 ## Methods
 
 ```ruby
-# met <name>
-def name
+# met <method_name>
+def method_name
 end
 
-# short met <name>
-def <name> = 
+# short met <method_name>
+def <method_name> = 
 
-# met bank | mukbang <name>
-def name!
+# met bank | mukbang <method_name>
+def method_name!
 end
 
-# met plight <name>
-def name?
+# met plight <method_name>
+def method_name?
 end
 
 # return
@@ -331,44 +333,63 @@ yield
 # yeild self
 yeild self
 
-# call <name>
-.name
-# call bang <name>
-.name!
-# call plight <name>
-.name?
-# safe call <name>
-&.name
+# call <method_name>
+.method_name
+# call bang <method_name>
+.method_name!
+# call plight <method_name>
+.method_name?
+# safe call <method_name>
+&.method_name
+```
+
+## Modules
+
+```ruby
+# module <module_name>
+module ModuleName
+end
+
+# refine <class_name>
+refine ClassName
+end
+
+# include <module_name>
+include ModuleName
+# extend <module_name>
+extend ModuleName
+# using <module_name>
+using ModuleName
 ```
 
 ## Names
 
 ```ruby
-# name <name>
-name
-# bang <name>
-name!
-# plight <name>
-name?
+# name <variable_name>
+variable_name
+# bang <method_name>
+method_name!
+# plight <method_name>
+method_name?
 
-# instance <name>
-@name
-# type instance <name>
-@@name
+# instance <variable_name>
+@variable_name
+# type instance <variable_name>
+@@variable_name
 
-# self <name>
-self.name
+# self <variable_name>
+self.variable_name
 
-# const <name>
-NAME
+# const <const_name>
+CONST_NAME
 
-# type <name>
-Name
-# pack <name>
-::Name
+# type <class_name>
+ClassName
+# pack <class_name>
+::ClassName
 
-# global <name>
-$name
+# global <variable_name>
+$variable_name
 ```
 
 ## Operators
@@ -376,8 +397,8 @@ $name
 ```ruby
 # set to
  = 
-# set <name> to
-name = 
+# set <variable_name> to
+variable_name = 
 
 # plus
  + 
@@ -462,14 +483,14 @@ name =
 # require <path>
 require "path"
 
-# alias <name> to <name>
-alias name name
+# alias <method_name> to <method_name>
+alias method_name method_name
 
-# unbind <name>
-undef name
+# unbind <method_name>
+undef method_name
 
-# defined <name>
-defined?(name)
+# defined <method_name>
+defined?(method_name)
 
 # art read
 attr_reader 
