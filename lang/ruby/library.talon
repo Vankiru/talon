@@ -15,3 +15,6 @@ call {user.std_method}:
 
 (bang | bank) {user.std_method}:
   user.vim_insert_mode(".{std_method}!", "a")
+
+plight {user.std_method}:
+  user.vim_insert_mode(".{std_method}!", "a")

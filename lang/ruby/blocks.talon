@@ -6,5 +6,5 @@ block:
   insert("k$")
 
 line block:
-  user.vim_insert_mode(" { }", "a")
-  insert("2h")
+  user.vim_insert_mode(" {  }", "a")
+  insert("3h")

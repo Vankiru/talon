@@ -75,5 +75,5 @@ rig:
 # lambda
 
 lambda:
-  user.vim_insert_mode("-> { }", "a")
-  key("h")
+  user.vim_insert_mode("-> {  }", "a")
+  key("2h")

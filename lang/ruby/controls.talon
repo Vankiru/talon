@@ -3,9 +3,7 @@ title: /\w*\.rb (.*) - VIM/
 
 tag(): user.code_controls
 
-triplet:
-  user.vim_insert_mode(" ?  : ", "a")
-  insert("3h")
+# if/unless/ternary
 
 unless:
   user.vim_insert_mode("unless \nend", "o")
@@ -18,6 +16,12 @@ unless:
 (line unless) | unleaf:
   user.vim_insert_mode(" unless ", "a")
 
+triplet:
+  user.vim_insert_mode(" ?  : ", "a")
+  insert("3h")
+
+# case
+
 case:
   user.vim_insert_mode("case \nend", "o")
   insert("k$")
@@ -28,18 +32,22 @@ when:
 then:
   user.vim_insert_mode(" then ", "a")
 
-end while:
-  user.vim_insert_mode("begin\nend while ", "o")
+# while/until
 
 until:
   user.vim_insert_mode("until  do\nend", "o")
   insert("k^el")
+
+end while:
+  user.vim_insert_mode("begin\nend while ", "o")
 
 line while:
   user.vim_insert_mode(" while ", "a")
 
 line until:
   user.vim_insert_mode(" until ", "a")
+
+# break/next
 
 break:
   user.vim_insert_mode("break", "o")
