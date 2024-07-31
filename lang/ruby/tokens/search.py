@@ -223,11 +223,26 @@ ctx.lists["user.file_name_token_regex"] = {
 
 @mod.action_class
 class Actions:
-    def code_search_token(token: str, identifier: str = ""):
-        """Search for token"""
+    def code_go_to_token(token: str, identifier: str = ""):
+        """Go to the next token"""
+
+    def code_back_to_token(token: str, identifier: str = ""):
+        """Go to the next token"""
+
+    def code_search_token(token: str, identifier: str = "", direction: str = "/"):
+        """Search for a token"""
 
 @ctx.action_class("user")
 class CodeActions:
-    def code_search_token(token: str, identifier: str = ""):
-        actions.user.vim_normal_mode(f"/{token.format(identifier = identifier)}")
+    def code_go_to_token(token: str, identifier: str = ""):
+        actions.user.code_search_token(token, identifier)
+        actions.user.vim_command_mode("noh")
+
+    def code_back_to_token(token: str, identifier: str = ""):
+        actions.user.code_search_token(token, identifier, "?")
+        actions.user.vim_command_mode("noh")
+
+    def code_search_token(token: str, identifier: str = "", direction: str = "/"):
+        search = f"{direction}{token.format(identifier = identifier)}"
+        actions.user.vim_normal_mode(search)
         actions.key("enter")
