@@ -18,10 +18,10 @@ met plight <user.method_name>:
   user.vim_insert_mode("&.", "a")
   insert("a")
 
-call (bang | bank) <user.method_name>:
+(call | cold) (bang | bank) <user.method_name>:
   user.vim_insert_mode(".{method_name}!", "a")
 
-call plight <user.method_name>:
+(call | cold) plight <user.method_name>:
   user.vim_insert_mode(".{method_name}?", "a")
 
 parent:

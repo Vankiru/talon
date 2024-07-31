@@ -9,6 +9,7 @@
 - [Exceptions](#exceptions)
 - [Library](#library)
 - [Methods](#methods)
+- [Modules](#modules)
 - [Names](#names)
 - [Operators](#operators)
 - [Statements](#statements)
