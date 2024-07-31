@@ -1,7 +1,7 @@
 from talon import Module, Context, actions
 
 mod = Module()
-mod.list("nameless_token_regex", desc="")
+mod.list("nameless_token_regex", desc="Regex for nameless tokens")
 mod.list("number_token_regex", desc="Regex for number tokens")
 mod.list("text_token_regex", desc="Regex for text tokens")
 mod.list("snake_name_token_regex", desc="Regex for snake name tokens")
@@ -12,12 +12,22 @@ mod.list("file_name_token_regex", desc="Regex for file name tokens")
 ctx = Context()
 ctx.matches = "title: /.*\.rb (.*) - VIM/"
 
+# for <item> in <list>
+# for item in list do
+# number <number> point <number>
+# range <from> to <to> (from..to)
+# range <from> until <to> (from...to)
+# object range <from> to <to> Range.new(from, to)
+# object range <from> until <to> Range.new(from, to, true)
+# rescue <name> as <name> rescue Name => name
+# set <name> to: "name =",
+
 ctx.lists["user.nameless_token_regex"] = {
     # arguments
     "arts": "(.*)",
     "barbs": " |.*|",
     "comma": ",[ |\\n]",
-    "forward art": "(\.\.\.)",
+    "forward art": "(\zs\.\.\.\ze)",
     # blocks
     "block": "\([while|until] .*\)\@<! do",
     "line block": "\w\+\zs {.*}",
@@ -59,7 +69,7 @@ ctx.lists["user.nameless_token_regex"] = {
     # data types
     "true": "true",
     "false": "false",
-    "none": "",
+    "none": "nil",
     "nun": "nil",
     "list": "\(\w\+\)\@<!\[",
     "object list": "Array\.new",
@@ -178,6 +188,7 @@ ctx.lists["user.snake_name_token_regex"] = {
     "type instance": "@@{identifier}",
     "self": "self.{identifier}",
     "global": "${identifier}",
+    # statements
     "unbind": "undef {identifier}",
     "defined": "defined?({identifier})"
 }
@@ -210,16 +221,6 @@ ctx.lists["user.file_name_token_regex"] = {
     # statements
     "require": 'require "{identifier}.*"',
 }
-
-# for <item> in <list>
-# for item in list do
-# number <number> point <number>
-# range <from> to <to> (from..to)
-# range <from> until <to> (from...to)
-# object range <from> to <to> Range.new(from, to)
-# object range <from> until <to> Range.new(from, to, true)
-# rescue <name> as <name> rescue Name => name
-# set <name> to: "name =",
 
 @mod.action_class
 class Actions:
