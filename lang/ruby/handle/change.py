@@ -4,7 +4,7 @@ mod = Module()
 
 ctx = Context()
 ctx.matches = "title: /.*\.rb (.*) - VIM/"
-# "rescue as": "rescue => {identifier}",
+# "rescue as": "rescue => {id}",
 # for <item> in <list>
 # for item in list do
 # number <number> point <number>
