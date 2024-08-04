@@ -26,19 +26,19 @@ RUBY_CLASSES_TOKENS = {
     "private": {
         "id_type": "none",
         "body": "line",
-        "search_regex": "private",
+        "search_regex": "private\( .*\)\?",
         "body_regex": "private \zs.*"
     },
     "protected": {
         "id_type": "none",
         "body": "line",
-        "search_regex": "protected",
+        "search_regex": "protected\( .*\)\?",
         "body_regex": "protected \zs.*"
     },
     "public": {
         "id_type": "none",
         "body": "line",
-        "search_regex": "public",
+        "search_regex": "public\( .*\)\?",
         "body_regex": "public \zs.*"
     },
     "new": {
