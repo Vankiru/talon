@@ -73,8 +73,11 @@ Range.new(1, 2)
 
 # <regex>
 /regex/
+/=/
 Regexp.new("regex")
 
 # <lambda>
 -> { 1 + 1 }
 ->(key) { 1 + 1 }
+proc { 1 + 1 }
+proc { |key| 1 + 1 }

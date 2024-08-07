@@ -12,8 +12,8 @@ RUBY_DATA_TYPES_TOKENS = {
         "search_regex": "false"
     },
     "none": {
-        "type": "none",
-        "id_type": "inline",
+        "type": "inline",
+        "id_type": "none",
         "search_regex": "nil"
     },
     "nun": {
@@ -21,25 +21,20 @@ RUBY_DATA_TYPES_TOKENS = {
         "id_type": "none",
         "search_regex": "nil"
     },
+    "number": {
+        "type": "inline",
+        "id_type": "string_number",
+        "search_regex": "{id}\d*"
+    },
     "string": {
         "type": "inline",
         "id_type": "text",
         "search_regex": '"{id}.*"'
     },
-    "quote string": {
+    "sim": {
         "type": "inline",
-        "id_type": "text",
-        "search_regex": "'{id}.*'"
-    },
-    "multi string": {
-        "type": "block",
-        "id_type": "text",
-        "search_regex": '"\n{id}.*"'
-    },
-    "doc string": {
-        "type": "block",
-        "id_type": "text",
-        "search_regex": "<<~DOC\n{id}.*"
+        "id_type": "snake_case",
+        "search_regex": ":{id}\w*"
     },
     "rig": {
         "type": "inline",
@@ -55,16 +50,6 @@ RUBY_DATA_TYPES_TOKENS = {
         "type": "inline",
         "id_type": "none",
         "search_regex": "Array\.new(.*)"
-    },
-    "string list": {
-        "type": "inline,block",
-        "id_type": "text",
-        "search_regex": "%w\[{id}.*\]"
-    },
-    "sim list": {
-        "type": "inline",
-        "id_type": "text",
-        "search_regex": "%w\[{id}.*\]"
     },
     "hash": {
         "type": "inline,block",
@@ -85,11 +70,6 @@ RUBY_DATA_TYPES_TOKENS = {
         "type": "inline",
         "id_type": "none",
         "search_regex": "-> {.*}"
-    },
-    "number": {
-        "type": "inline",
-        "id_type": "string_number",
-        "search_regex": "{id}\d*"
     },
     "range": {
         "type": "inline",
@@ -115,11 +95,6 @@ RUBY_DATA_TYPES_TOKENS = {
         "type": "inline",
         "id_type": "snake_case",
         "search_regex": "#{{{id}.\{-}}}"
-    },
-    "sim": {
-        "type": "inline",
-        "id_type": "snake_case",
-        "search_regex": ":{id}\w*"
     },
     "key": {
         "type": "inline",
