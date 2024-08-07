@@ -1,4 +1,6 @@
 content = "\(.\|\n\)\{-}"
 
-hash = "{{{content}}}"
+prefix = "\%(->\s*\|{method_name}\|)\s*\|%[qQiIwWsr]\)\@<!"
+hash = "{prefix}{{{content}}}"
+
 object = "Hash.new(.\{-})"

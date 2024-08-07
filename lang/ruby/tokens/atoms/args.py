@@ -1,5 +1,5 @@
 type = "\%(*\|**\|&\)\="
-arg_name = "\<{snake_name}\>"
+arg_name = "\<{base_name}\>"
 default = "\s*=\s*{value}"
 keyward = ":\s*{value}\=" 
 suffix = "\%(,\s*\)\|)\||\)\@="

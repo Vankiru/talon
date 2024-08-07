@@ -19,7 +19,7 @@ RUBY_NAMES_REGEX = {
         "id_type": "none",
         "search_regex": "@{id}"
     },
-    "type instance": {
+    "type name": {
         "type": "none",
         "id_type": "none",
         "search_regex": "@@{id}"
