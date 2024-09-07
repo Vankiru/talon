@@ -1,5 +1,0 @@
-push
-toggle
-fold
-unfold
-clip

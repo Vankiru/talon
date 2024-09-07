@@ -1,9 +1,0 @@
-module <module>
-end
-
-refine <module> do
-end
-
-include <module>
-extend <module>
-using <module>
