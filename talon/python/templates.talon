@@ -47,6 +47,19 @@ talon python file:
 
   user.vim_insert_mode(command)
 
+talon term file:
+  command = """from talon import Context, actions
+
+  ctx = Context()
+  ctx.matches = "title: /zsh/"
+
+  @ctx.action_class("user")
+  class ConsoleActions:
+      pass
+  """
+
+  user.vim_insert_mode(command)
+
 talon tag file <user.text>:
   tag = user.code_snake_case(text)
   command = """from talon import Module
