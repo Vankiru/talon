@@ -8,8 +8,14 @@ slot next:
 slot last:
   key(super-left)
   
+grip clip:
+  insert('fgrep -R "')
+  edit.paste()
+  insert('" ./')
+  key(enter)
+
 grip <user.text>:
-  insert("fgrep -R \"{text}\" ")
+  insert('fgrep -R "{text}" ')
 
 vim:
   insert("vim")
