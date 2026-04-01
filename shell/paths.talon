@@ -6,5 +6,5 @@ title: /zsh/
   insert("cd {local_path}")
   key(enter)
 
-(catty | katy)
+catty | katy:
   insert("cd ")
