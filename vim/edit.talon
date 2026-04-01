@@ -23,6 +23,12 @@ above:
   key(backspace)
   key(escape)
 
+multi below:
+  key("a")
+  key("enter")
+  key("escape")
+  key("shift-o")
+
 (line | empty) (below | down):
   user.vim_normal_mode("o")
   key(escape)

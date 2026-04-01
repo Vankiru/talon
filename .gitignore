@@ -1,6 +1,7 @@
 *.swp
 *.swo
 
-test/**/*
+shell/paths.py
+shell/paths.talon-list
 
 .DS_Store

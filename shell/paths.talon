@@ -2,9 +2,9 @@ app: iterm2
 title: /zsh/
 -
 
-(catty | katy) {user.shell_path}:
-  insert("cd {shell_path}")
+(catty | katy) {user.local_path}:
+  insert("cd {local_path}")
   key(enter)
 
-(catty | katy) <user.file_name>
-  insert("cd {file_name}")
+(catty | katy)
+  insert("cd ")

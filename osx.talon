@@ -4,7 +4,7 @@ os: mac
 super:
   key(super)
   
-space last:
+space last | past:
   key(ctrl-left)
 
 space next:
