@@ -1,10 +1,5 @@
 Personal set of commands for Talon Voice.
 
-- [Vim](vim)
-- [Shell](shell)
-- [Git](git)
-- [macOS](macos)
-
 ## Vim
 
 ```
