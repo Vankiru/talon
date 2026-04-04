@@ -5,7 +5,7 @@ title: /zsh/
 slot next:
   key(super-right)
 
-slot last:
+slot (last | past):
   key(super-left)
   
 grip clip:

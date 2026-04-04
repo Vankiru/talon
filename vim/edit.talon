@@ -40,7 +40,7 @@ multi below:
 capital:
   user.vim_normal_mode("vgU")
 
-swap words:
+swap (words | two):
   user.vim_normal_mode("dwea ")
   user.vim_normal_mode("px")
 

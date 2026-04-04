@@ -15,4 +15,3 @@ file open:
 
 file toggle:
   user.vim_normal_mode("zi")
-
